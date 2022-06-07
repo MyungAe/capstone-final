@@ -26,6 +26,7 @@ const MainSection = styled(FlexWrap)`
 
 const SubTitle = styled.h2`
   font-size: 64px;
+  margin-top: 0px;
 `;
 
 const Paragraph = styled.p`
@@ -41,7 +42,7 @@ const Button = styled.button`
 `;
 
 const CustomButton = styled(Button)`
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 20px;
   background-color: #405ffd;
   color: white;
@@ -56,7 +57,7 @@ function MainContent() {
         <div>
           <SubTitle>스터디셀러</SubTitle>
           <Paragraph>
-            더 이상 스터디 모집을 위해 여러 서비스를 분산 이용하지 마세요.
+            더 이상 스터디 모집을 위해 여러 서비스를 이용하지 마세요.
           </Paragraph>
           <Paragraph>
             스터디 모집과 운영을 한 번에 관리하는 스터디셀러를 이용하세요.
