@@ -37,11 +37,11 @@ const StudyItem = ({ study }) => {
   return (
     <StudyItemBlock>
       {urlToImage && (
-        <div className='thumbnail'>
+        <div className="thumbnail">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <img src={urlToImage} alt="thumbnail" />
           </a>
-        </div >
+        </div>
       )}
       <div className="contents">
         <h2>
@@ -52,15 +52,12 @@ const StudyItem = ({ study }) => {
         <p>주제: {topic}</p>
         <p>지역: {region}</p>
         <p>모집여부: {isOpened}</p>
-        <Link to='/detail'>
+        <Link to="/study/detail">
           <p>자세히 보기</p>
         </Link>
-
-      </div >
-    </StudyItemBlock >
+      </div>
+    </StudyItemBlock>
   );
 };
-
-
 
 export default StudyItem;

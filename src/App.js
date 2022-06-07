@@ -12,8 +12,8 @@ import SignUp from './components/sign/SignUp';
 const App = () => {
   return (
     <Routes>
-      <Route element={<Home />} path="/" />
-      <Route element={<StudyList />} path="/study" />
+      <Route element={<Home />} path="/" exact />
+      <Route element={<StudyList />} path="/study" exact />
       <Route element={<StudyWrite />} path="/study/write" />
       <Route element={<StudyJoin />} path="/study/detail/join" />
       <Route element={<StudyDetail />} path="/study/detail" />

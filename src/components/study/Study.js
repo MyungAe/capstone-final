@@ -12,7 +12,7 @@ const MainPage = () => {
       <ContentWrap>
         <div>
           <h3>개설된 스터디 목록</h3>
-          <Link to="write">
+          <Link to="/study/write">
             <button>스터디 등록</button>
           </Link>
           <StudyList />

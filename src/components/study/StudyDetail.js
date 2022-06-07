@@ -10,7 +10,7 @@ const StudyDetail = ({ study }) => {
     urlToImage: 'https://via.placeholder.com/160',
     region: '대전',
     isOpened: '모집 중',
-    detail: '자세히 보기'
+    detail: '자세히 보기',
   };
 
   return (
@@ -20,7 +20,7 @@ const StudyDetail = ({ study }) => {
       <p>내용: {sampleDetail.description}</p>
       <p>지역: {sampleDetail.region}</p>
       <p>모집여부: {sampleDetail.isOpened}</p>
-      <Link to='join'>
+      <Link to="/study/detail/join">
         <button>스터디 신청</button>
       </Link>
     </>
