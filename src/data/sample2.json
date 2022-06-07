@@ -1,0 +1,166 @@
+{
+  "studyList": [
+    {
+      "id": 5,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 6,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "우리는 뭐하는 스터디입니다. 어서오세요. .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 7,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "우리는 뭐하는 스터디입니다. 어서오세요. .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 8,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 9,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 10,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 11,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 12,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 13,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 14,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 15,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 16,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 17,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 18,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 19,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 20,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 21,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 22,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "데이터 수정 성공 .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    }
+  ]
+}

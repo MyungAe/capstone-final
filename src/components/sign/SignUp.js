@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import HeaderNav from '../HeaderNav';
 import FooterNav from '../FooterNav';
+import axios from 'axios';
 
 const SigninWrap = styled.div`
   display: flex;
@@ -67,28 +68,56 @@ const Submit = styled.input`
 `;
 
 function SignIn() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const emailHandler = (event) => {
+    event.preventDefault();
+    setEmail(event.target.value);
+  };
+
+  const passwordHandler = (event) => {
+    event.preventDefault();
+    setPassword(event.target.value);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    let body = {
+      email: email,
+      password: password,
+    };
+
+    axios({
+      method: 'post',
+      url: 'http://localhost:9000/signup',
+      headers: { 'Content-Type': 'application/json' },
+      body: body,
+    })
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
+  };
+
   return (
     <>
       <HeaderNav />
       <SigninWrap>
         <Signin>
           <Title>스터디셀러 회원가입</Title>
-          <form action="" method="post">
+          <form method="post" onSubmit={submitHandler}>
             <FlexWrap>
-              <Label htmlFor="email">이메일 : </Label>
+              <Label>이메일 : </Label>
               <Input
                 type="email"
-                name="id"
-                id="email"
+                onChange={emailHandler}
                 placeholder="이메일을 입력해 주세요."
               />
             </FlexWrap>
             <FlexWrap>
-              <Label htmlFor="password">비밀번호 : </Label>
+              <Label>비밀번호 : </Label>
               <Input
                 type="password"
-                name="pw"
-                id="password"
+                onChange={passwordHandler}
                 placeholder="비밀번호를 입력해 주세요."
               />
             </FlexWrap>

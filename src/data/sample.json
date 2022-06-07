@@ -1,0 +1,31 @@
+{
+  "studyList": [
+    {
+      "id": 1,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "우리는 뭐하는 스터디입니다. 어서오세요. .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 2,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "우리는 뭐하는 스터디입니다. 어서오세요. .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    },
+    {
+      "id": 3,
+      "title": "스터디 그룹 이름#1234",
+      "userName": "개설자",
+      "contents": "우리는 뭐하는 스터디입니다. 어서오세요. .....",
+      "topic": ["어학", "취업"],
+      "isOpened": "True",
+      "region": "Seoul"
+    }
+  ]
+}

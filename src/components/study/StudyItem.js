@@ -1,63 +1,55 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+  Chip,
+} from '@mui/material';
 
-const StudyItemBlock = styled.div`
-  display: flex;
-  .thumbnail {
-    margin-right: 1rem;
-    img {
-      display: block;
-      width: 160px;
-      height: 100px;
-      object-fit: cover;
-    }
-  }
-  .contents {
-    h2 {
-      margin: 0;
-      a {
-        color: black;
-      }
-    }
-    p {
-      margin: 0;
-      line-height: 1.5;
-      margin-top: 0.5rem;
-      white-space: normal;
-    }
-  }
-  & + & {
-    margin-top: 3rem;
-  }
-`;
-
-const StudyItem = ({ study }) => {
-  const { title, topic, region, isOpened, url, urlToImage } = study;
+export default function StudyItem(sample, index) {
   return (
-    <StudyItemBlock>
-      {urlToImage && (
-        <div className="thumbnail">
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <img src={urlToImage} alt="thumbnail" />
-          </a>
-        </div>
-      )}
-      <div className="contents">
-        <h2>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {title}
-          </a>
-        </h2>
-        <p>주제: {topic}</p>
-        <p>지역: {region}</p>
-        <p>모집여부: {isOpened}</p>
-        <Link to="/study/detail">
-          <p>자세히 보기</p>
+    <Grid item key={index} xs={12} sm={6} md={4}>
+      <Card
+        sx={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Link to={`/study/detail`}>
+          <CardMedia
+            height="140"
+            component="img"
+            // sx={{
+            //   // 16:9
+            //   // pt: '56.25%',
+            // }}
+            image="https://source.unsplash.com/random"
+            alt="random"
+          />
+          <CardContent sx={{ flexGrow: 1 }}>
+            <Typography gutterBottom variant="h5" component="h2" color="black">
+              {sample.title.split('#')[0]}
+            </Typography>
+            <Typography>{sample.contents}</Typography>
+          </CardContent>
+          <CardActions>
+            {sample.topic.map((tag, index) => (
+              <Chip
+                key={index}
+                label={tag}
+                variant="outlined"
+                color="primary"
+              />
+            ))}
+          </CardActions>
         </Link>
-      </div>
-    </StudyItemBlock>
+      </Card>
+    </Grid>
   );
-};
-
-export default StudyItem;
+}
